@@ -151,7 +151,7 @@ const
 // app.set('view engine', 'ejs');
 
 app.get('/', function(req, res) {
-  res.send('asdf');
+  res.send('lisenin');
 });
 
 
@@ -210,4 +210,10 @@ app.get('/webhook', (req, res) => {
 });
 
 // Sets server port and logs message on success
-app.listen(8000, () => console.log('webhook is listening'));
+app.listen(8000, (err) => {
+  if(err){
+    console.log(err);
+  }else{
+    console.log("Listening!");
+  }
+});
