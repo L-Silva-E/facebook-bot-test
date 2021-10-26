@@ -144,14 +144,14 @@ const { response } = require('express');
 const
   express = require('express'),
   bodyParser = require('body-parser'),
-  app = express().use(bodyParser.json()); // creates express http server
+  app = express(); // creates express http server
 
 // Set Views
 // app.set('views', './views');
 // app.set('view engine', 'ejs');
 
-app.get('/', (req, res) => {
-  res.send('indexs');
+app.get('/', function(req, res) {
+  res.send('asdf');
 });
 
 
