@@ -150,10 +150,6 @@ const
 app.set('views', './views');
 app.set('view engine', 'ejs');
 
-// Sets server port and logs message on success
-app.listen(process.env.PORT || 8080, () => console.log('webhook is listening'));
-
-
 app.get('/', (req, res) => {
   res.send('index');
 });
@@ -212,3 +208,6 @@ app.get('/webhook', (req, res) => {
     }
   }
 });
+
+// Sets server port and logs message on success
+app.listen(process.env.PORT || 8080, () => console.log('webhook is listening'));
