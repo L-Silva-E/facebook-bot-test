@@ -147,12 +147,11 @@ const
   app = express(); // creates express http server
 
 // Set Views
-// app.set('views', './views');
-// app.set('view engine', 'ejs');
+app.set('views', './views');
+app.set('view engine', 'ejs');
 
 app.get('/', function(req, res) {
-  console.log("GET");
-  res.send('lisenin');
+  res.send('asdf');
 });
 
 
