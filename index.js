@@ -151,6 +151,7 @@ const
 // app.set('view engine', 'ejs');
 
 app.get('/', function(req, res) {
+  console.log("GET");
   res.send('lisenin');
 });
 
