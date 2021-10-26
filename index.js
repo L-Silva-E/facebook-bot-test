@@ -146,9 +146,6 @@ const
   bodyParser = require('body-parser'),
   app = express().use(bodyParser.json()); // creates express http server
 
-const fs = require('fs');
-
-
 // Set Views
 app.set('views', './views');
 app.set('view engine', 'ejs');
