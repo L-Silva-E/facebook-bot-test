@@ -212,7 +212,7 @@ app.get('/webhook', (req, res) => {
 });
 
 // Sets server port and logs message on success
-app.listen(8000, (err) => {
+app.listen(443, (err) => {
   if(err){
     console.log(err);
   }else{
