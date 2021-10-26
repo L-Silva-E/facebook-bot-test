@@ -155,7 +155,7 @@ app.listen(process.env.PORT || 8080, () => console.log('webhook is listening'));
 
 
 app.get('/', (req, res) => {
-  res.render('index');
+  res.send('index');
 });
 
 
