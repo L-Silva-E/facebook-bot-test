@@ -147,11 +147,11 @@ const
   app = express().use(bodyParser.json()); // creates express http server
 
 // Set Views
-app.set('views', './views');
-app.set('view engine', 'ejs');
+// app.set('views', './views');
+// app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => {
-  res.send('index');
+  res.send('indexs');
 });
 
 
@@ -210,4 +210,4 @@ app.get('/webhook', (req, res) => {
 });
 
 // Sets server port and logs message on success
-app.listen(process.env.PORT || 8080, () => console.log('webhook is listening'));
+app.listen(8000, () => console.log('webhook is listening'));
