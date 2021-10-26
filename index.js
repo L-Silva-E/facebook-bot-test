@@ -151,7 +151,9 @@ app.set('views', './views');
 app.set('view engine', 'ejs');
 
 app.get('/', function(req, res) {
-  res.send('asdf');
+  console.log(" > GET");
+
+  res.render('index');
 });
 
 
