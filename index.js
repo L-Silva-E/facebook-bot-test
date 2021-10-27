@@ -138,6 +138,8 @@
 
 'use strict';
 
+require('dotenv').config();
+
 const { response } = require('express');
 
 // Imports dependencies and set up http server
@@ -152,6 +154,7 @@ app.set('view engine', 'ejs');
 
 app.get('/', function(req, res) {
   console.log(" > GET");
+  console.log("ENV: "+process.env.FACEBOOK_PAGE_ID)
 
   res.render('index');
 });
